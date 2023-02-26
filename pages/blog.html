@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!---- META ---->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Travela blog - Blog" />
+
+    <!---- FAVICON ---->
+    <link rel="icon" href="images/icons/favicon.png" type="image/png" />
+
+    <!---- FONTS ---->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!---- CSS LINKS ---->
+    <link rel="stylesheet" href="../styles/universal.css" />
+    <link rel="stylesheet" href="../styles/nav.css" />
+    <link rel="stylesheet" href="../styles/blog.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+
+    <!---- JS LINKS ---->
+    <script src="../js/posts.js" type="module"></script>
+    <script src="../js/nav.js" type="module"></script>
+
+    <!-- Hotjar Tracking Code for travela.pladsen.dev -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3379441, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+
+    <title>Travela - Blog</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-content-container">
+        <a href="../index.html">
+          <div class="logo-container">
+            <img
+              class="logo-image"
+              src="../images/icons/logo.svg"
+              alt="Travela logo"
+            />
+            <p class="logo-text">Travela</p>
+          </div>
+        </a>
+        <div class="mobile-menu">
+          <img
+            id="nav-button"
+            class="hamburger"
+            src="../images/icons/hamburger.svg"
+            alt="hamburger icon"
+          />
+          <div id="drop-down" class="mobile-dropdown dropdown-hidden">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a href="../index.html">Home</a>
+              </li>
+              <li class="menu-item nav-active">
+                <a href="../pages/blog.html">Blog</a>
+              </li>
+              <li class="menu-item"><a href="../pages/about.html">About</a></li>
+              <li class="menu-item">
+                <a href="../pages/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="desktop-menu">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="menu-item nav-active">
+              <a href="../pages/blog.html">Blog</a>
+            </li>
+            <li class="menu-item"><a href="../pages/about.html">About</a></li>
+            <li class="menu-item">
+              <a href="../pages/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section>
+        <h1>All posts</h1>
+        <div class="button-container">
+          <div class="sort-button-container">
+            <div class="sort-button category-button">
+              <button class="category-button-text">Sort by category</button>
+              <img
+                class="category-button-icon"
+                src="../images/icons/arrow-down.svg"
+                alt="arrow down icon"
+              />
+            </div>
+            <div class="sort-options category-options hidden"></div>
+          </div>
+          <div class="search-bar">
+            <input class="search-input" type="text" placeholder="Search..." />
+            <button class="search-button">
+              <img
+                class="search-icon"
+                src="../images/icons/search-icon.svg"
+                alt="search icon"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="posts-container"></div>
+        <div class="button-container see-more-button-container">
+          <button class="cta more-posts-button">More posts</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <a href="../index.html">
+          <div class="logo-container">
+            <img
+              class="logo-image"
+              src="../images/icons/logo.svg"
+              alt="Travela logo"
+            />
+            <p class="logo-text">Travela</p>
+          </div>
+        </a>
+        <div class="footer-text">
+          <p>Phone: <span class="hover-secondary">998 87 766</span></p>
+          <p>
+            <a href="mailto:contact@travela.com"
+              >Email:
+              <span class="hover-secondary">contact@travela.com</span></a
+            >
+          </p>
+          <p>Web: <span class="hover-secondary">www.travela.com</span></p>
+        </div>
+        <div class="copyright-container"><p>&#169; Magnus Pladsen 2023</p></div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+.about, .about-h1 {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-button {
+    margin-top: 50px;
+}

@@ -1,0 +1,270 @@
+/* ---- UNIVERSAL ---- */
+
+:root {
+  --primary-color: #6d6611;
+  --secondary-color: #b95741;
+  --grayGreen-color: #fffcf5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+h2 {
+  font-family: "Quicksand", sans-serif;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+section {
+  padding: 50px 40px 150px 40px;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+section button {
+  margin: 0 auto;
+  display: block;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  text-decoration: 2px underline;
+  text-underline-offset: 10px;
+  color: var(--secondary-color);
+  text-align: left;
+  margin-top: 25px !important ;
+  margin-bottom: 40px !important;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.underline {
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.cta {
+  color: var(--primary-color);
+  padding: 12px 25px;
+  border-radius: 3px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  scale: 1;
+  transition: all 0.2s ease-in-out;
+  background-color: var(--grayGreen-color);
+  border: 1px solid var(--grayGreen-color);
+}
+
+.cta:hover {
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+  color: var(--secondary-color);
+  scale: 1.05;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid var(--secondary-color);
+}
+
+.logo-container {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.logo-text:hover {
+  cursor: pointer;
+  color: var(--secondary-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.logo-text {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.loading {
+  height: 100px;
+  padding: 100px calc(50vw - 200px);
+  margin-bottom: 200px;
+}
+
+.error {
+  color: #eb0000;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.hover-secondary {
+  transition: all 0.2s ease-in-out;
+}
+
+.hover-secondary:hover {
+  color: var(--secondary-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.hidden {
+  display: none !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.dropdown-hidden {
+  animation: hide 0.15s ease-in-out forwards;
+}
+
+.dropdown-show {
+  animation: show 0.15s ease-in-out forwards;
+}
+
+.selected {
+  color: var(--secondary-color);
+}
+
+/* -- POST STYLING -- */
+.post-container {
+  max-width: 340px;
+  height: 400px;
+  position: relative;
+  scale: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.post-container:hover {
+  transform: scale(1.02 );
+  transition: all 0.2s ease-in-out;
+}
+
+.post-title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: var(--secondary-color);
+  text-align: left;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+.post-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+  height: 60%;
+}
+
+.post-container:hover .post-img {
+  filter: brightness(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.post-container:hover .posts-readmore {
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+  color: var(--secondary-color)
+}
+
+.post-text {
+  margin: 0;
+  color: black;
+  font-weight: 400;
+}
+
+.posts-readmore {
+  font-size: 12px;
+  color: var(--primary-color);
+  margin-top: 5px;
+  opacity: 0.5;
+  font-weight: 100;
+}
+
+.post-info-container {
+  display: flex;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+.post-info-container p {
+  margin: 0;
+}
+
+.post-all-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+/* -- MOBILE AND TABLET -- */
+@media screen and (max-width: 999px) {
+  nav {
+    position: fixed;
+    z-index: 50;
+    width: calc(100vw - 80px);
+  }
+  section {
+    padding-top: 140px;
+  }
+}
+
+/* -- DESKTOP -- */
+@media screen and (min-width: 1000px) {
+  .logo-container {
+    padding-top: 0px;
+  }
+  .post-img {
+    filter: brightness(0.9);
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+/* -- ANIMATIONS -- */
+@keyframes hide {
+  from {
+    opacity: 1;
+    top: 106.5px;
+  }
+  to {
+    opacity: 0;
+    top: -100%;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    top: -100%;
+  }
+  to {
+    opacity: 1;
+    top: 106.5px;
+  }
+}

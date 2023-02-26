@@ -1,0 +1,127 @@
+/* ---- INDEX ---- */
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/hero.jpeg) no-repeat center center;
+  background-size: cover;
+  height: calc(100vh);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+
+.hero-text-container {
+  position: absolute;
+  bottom: 25vh;
+}
+
+.hero-heading {
+  font-family: "Roboto", sans-serif;
+  
+  font-weight: 500;
+  font-size: clamp(2.5rem, 7vw, 10rem);
+  margin: 0;
+}
+
+.hero-subheading {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.2rem, 2vw, 5rem);
+  margin-top: 10px;
+}
+
+.hero-button {
+  position: absolute;
+  bottom: 18vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.recent-posts-container {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+  gap: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.carousel {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.carousel-tip {
+  display: none;
+}
+
+#prev-button,
+#next-button {
+  display: none;
+}
+
+section {
+  padding-top: 50px !important;
+}
+
+/* -- DESKTOP -- */
+@media screen and (min-width: 1000px) {
+  #prev-button,
+  #next-button {
+    position: absolute;
+    display: flex;
+    scale: 1;
+    transition: all 0.2s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+  }
+  #prev-button {
+    left: -40px;
+  }
+  #next-button {
+    right: -40px;
+  }
+  #prev-button:hover,
+  #next-button:hover {
+    scale: 1.4;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  .hero {
+    height: calc(100vh - 94.5px);
+  }
+  .recent-posts-container {
+    margin: 0 auto;
+    width: fit-content;
+    margin-bottom: 10px;
+    gap: 40px;
+  }
+  .carousel {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .post-container {
+    width: 300px;
+  }
+  .carousel-tip {
+    display: block;
+    font-style: italic;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .hero-text-container {
+    bottom: 18vh;
+  }
+  .hero-button {
+    bottom: 10vh;
+  }
+}

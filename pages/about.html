@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!---- META ---->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Travela blog - About us" />
+
+    <!---- FAVICON ---->
+    <link rel="icon" href="images/icons/favicon.png" type="image/png" />
+
+    <!---- FONTS ---->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!---- CSS LINKS ---->
+    <link rel="stylesheet" href="../styles/universal.css" />
+    <link rel="stylesheet" href="../styles/nav.css" />
+    <link rel="stylesheet" href="../styles/blog.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/about.css" />
+
+    <!---- JS LINKS ---->
+    <script src="../js/nav.js" type="module"></script>
+
+    <!-- Hotjar Tracking Code for travela.pladsen.dev -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3379441, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+
+    <title>Travela - About us</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-content-container">
+        <a href="../index.html">
+          <div class="logo-container">
+            <img
+              class="logo-image"
+              src="../images/icons/logo.svg"
+              alt="Travela logo"
+            />
+            <p class="logo-text">Travela</p>
+          </div>
+        </a>
+        <div class="mobile-menu">
+          <img
+            id="nav-button"
+            class="hamburger"
+            src="../images/icons/hamburger.svg"
+            alt="hamburger icon"
+          />
+          <div id="drop-down" class="mobile-dropdown dropdown-hidden">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a href="../index.html">Home</a>
+              </li>
+              <li class="menu-item">
+                <a href="../pages/blog.html">Blog</a>
+              </li>
+              <li class="menu-item nav-active">
+                <a href="../pages/about.html">About</a>
+              </li>
+              <li class="menu-item">
+                <a href="../pages/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="desktop-menu">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="menu-item">
+              <a href="../pages/blog.html">Blog</a>
+            </li>
+            <li class="menu-item nav-active">
+              <a href="../pages/about.html">About</a>
+            </li>
+            <li class="menu-item">
+              <a href="../pages/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section>
+        <h1 class="about-h1">About us</h1>
+        <article class="about">
+          <p>
+            Welcome to Travela, a travel blog that aims to inspire and guide
+            travelers of all kinds to explore the world and experience new
+            cultures.
+          </p>
+          <p>
+            I started Travela because I believe that traveling is one of the
+            most incredible things you can do in life. I've always had a passion
+            for exploring new places, meeting new people, and learning about
+            different cultures, and I wanted to create a platform where I could
+            share my experiences and inspire others to do the same.
+          </p>
+          <p>
+            But I also know that traveling can be daunting, especially if you're
+            new to it. That's why I created Travela as a resource for people of
+            all levels of experience. Whether you're a seasoned globetrotter or
+            a first-time tourist, I want to help you plan your trip, make the
+            most of your time abroad, and come home with memories that will last
+            a lifetime.
+          </p>
+          <p>
+            So, whether you're planning a backpacking trip through Southeast
+            Asia or a luxury safari in Africa, I hope that Travela will be a
+            helpful resource and a source of inspiration for your journey.
+            Thanks for joining us on this adventure!
+          </p>
+        </article>
+        <a href="/pages/contact.html"
+          ><button class="cta contact-button">Contact us</button></a
+        >
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <a href="../index.html">
+          <div class="logo-container">
+            <img
+              class="logo-image"
+              src="../images/icons/logo.svg"
+              alt="Travela logo"
+            />
+            <p class="logo-text">Travela</p>
+          </div>
+        </a>
+        <div class="footer-text">
+          <p>Phone: <span class="hover-secondary">998 87 766</span></p>
+          <p>
+            <a href="mailto:contact@travela.com"
+              >Email:
+              <span class="hover-secondary">contact@travela.com</span></a
+            >
+          </p>
+          <p>Web: <span class="hover-secondary">www.travela.com</span></p>
+        </div>
+        <div class="copyright-container"><p>&#169; Magnus Pladsen 2023</p></div>
+      </div>
+    </footer>
+  </body>
+</html>

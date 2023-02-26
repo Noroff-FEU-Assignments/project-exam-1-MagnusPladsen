@@ -1,0 +1,231 @@
+.button-container {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: var(--grayGreen-color);
+  height: 50px;
+  border: 1px solid var(--grayGreen-color);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  transition: all 0.2s ease-in-out;
+}
+
+.search-bar:focus-within,
+.search-bar:hover {
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar input {
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  background-color: var(--grayGreen-color);
+  margin-left: 2px;
+}
+
+.search-input:focus {
+  outline: none !important;
+}
+
+.search-bar button {
+  padding-right: 20px;
+}
+
+.sort-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0px 20px;
+  width: 100%;
+  background-color: var(--grayGreen-color);
+  height: 50px;
+  border: 1px solid var(--grayGreen-color);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  white-space: nowrap;
+  transition: all 0.2s ease-in-out;
+}
+
+.sort-button button {
+  margin: 0 !important;
+}
+
+.sort-button-container {
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  z-index: 2;
+  margin-right: 40px;
+}
+
+.sort-button-container:hover .sort-button {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border: 1px solid var(--secondary-color);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sort-button-container:hover .sort-button button {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+.sort-options {
+  position: absolute;
+  top: 52px;
+  z-index: 2;
+  background-color: var(--grayGreen-color);
+  border: 1px solid var(--secondary-color);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 20px;
+  width: 100%;
+}
+
+.option:hover {
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.sort-button button,
+.sort-options,
+.search-input {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  color: var(--primary-color);
+  font-size: 16px;
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: row;
+  padding: 40px 0;
+  gap: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.specific-post-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: bottom;
+  border-radius: 5px;
+}
+
+.speicific-post-text-container {
+  margin-bottom: 0;
+}
+
+.specific-button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 100px;
+}
+
+.no-more-posts {
+  margin: 0 auto;
+  color: var(--primary-color);
+  font-style: italic;
+  font-size: 12px;
+  margin-top: 50px;
+}
+
+.no-posts {
+  margin: 0 auto;
+  color: var(--primary-color);
+  font-style: italic;
+  font-size: 12px;
+  margin-top: 50px;
+}
+
+/* -- MODAL -- */
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+.modal-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modal-text {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  white-space: nowrap;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* -- DESKTOP -- */
+@media screen and (min-width: 1000px) {
+  .button-container {
+    flex-direction: row;
+  }
+  .search-bar {
+    width: 335px;
+  }
+  .posts-container {
+    margin-bottom: 10px;
+    gap: 50px;
+    margin-right: 0;
+  }
+  .post-container {
+    width: 350px;
+  }
+  .specific-post-container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .post-h1 {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .sort-button {
+    padding: 0px 20px;
+    width: 160px;
+  }
+  .sort-button-container {
+    margin-right: 0 !important;
+  }
+  .sort-options {
+    width: 160px;
+    padding: 20px 20px !important;
+  }
+  .specific-post-img {
+    height: 400px;
+  }
+  .modal-text {
+    bottom: 20px;
+  }
+}

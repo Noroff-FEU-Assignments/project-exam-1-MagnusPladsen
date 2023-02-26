@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!---- META ---->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Travela blog - Contact us" />
+
+    <!---- FAVICON ---->
+    <link rel="icon" href="images/icons/favicon.png" type="image/png" />
+
+    <!---- FONTS ---->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!---- CSS LINKS ---->
+    <link rel="stylesheet" href="../styles/universal.css" />
+    <link rel="stylesheet" href="../styles/nav.css" />
+    <link rel="stylesheet" href="../styles/blog.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+
+    <!---- JS LINKS ---->
+    <script src="../js/nav.js" type="module"></script>
+    <script src="../js/contact.js" type="module"></script>
+
+    <!-- Hotjar Tracking Code for travela.pladsen.dev -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3379441, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+
+    <title>Travela - About us</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-content-container">
+        <a href="../index.html">
+          <div class="logo-container">
+            <img
+              class="logo-image"
+              src="../images/icons/logo.svg"
+              alt="Travela logo"
+            />
+            <p class="logo-text">Travela</p>
+          </div>
+        </a>
+        <div class="mobile-menu">
+          <img
+            id="nav-button"
+            class="hamburger"
+            src="../images/icons/hamburger.svg"
+            alt="hamburger icon"
+          />
+          <div id="drop-down" class="mobile-dropdown dropdown-hidden">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a href="../index.html">Home</a>
+              </li>
+              <li class="menu-item">
+                <a href="../pages/blog.html">Blog</a>
+              </li>
+              <li class="menu-item">
+                <a href="../pages/about.html">About</a>
+              </li>
+              <li class="menu-item nav-active">
+                <a href="../pages/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="desktop-menu">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="menu-item">
+              <a href="../pages/blog.html">Blog</a>
+            </li>
+            <li class="menu-item">
+              <a href="../pages/about.html">About</a>
+            </li>
+            <li class="menu-item nav-active">
+              <a href="../pages/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section>
+        <h1 class="contact-h1">Contact us</h1>
+        <form id="contact-form">
+          <div class="input-container">
+            <label for="name">Full name</label>
+            <input type="text" name="your-name" id="your-name" />
+          </div>
+          <div class="form-error" id="name-error">
+            Name is required and should be more than 5 characters
+          </div>
+
+          <div class="input-container">
+            <label for="email">Email address</label>
+            <input type="email" name="your-email" id="your-email" />
+          </div>
+          <div class="form-error" id="email-error">Email is required</div>
+
+          <div class="input-container">
+            <label for="subject">Subject</label>
+            <input type="text" name="your-subject" id="your-subject" />
+          </div>
+          <div class="form-error" id="subject-error">
+            Subject is required and should be more than 15 characters
+          </div>
+
+          <div class="input-container">
+            <label for="your-message">Message</label>
+            <textarea name="your-message" id="your-message"></textarea>
+          </div>
+          <div class="form-error" id="message-error">
+            Message is required and should be more than 25 characters
+          </div>
+
+          <button class="cta cta-message">Send message</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <a href="../index.html">
+          <div class="logo-container">
+            <img
+              class="logo-image"
+              src="../images/icons/logo.svg"
+              alt="Travela logo"
+            />
+            <p class="logo-text">Travela</p>
+          </div>
+        </a>
+        <div class="footer-text">
+          <p>Phone: <span class="hover-secondary">998 87 766</span></p>
+          <p>
+            <a href="mailto:contact@travela.com"
+              >Email:
+              <span class="hover-secondary">contact@travela.com</span></a
+            >
+          </p>
+          <p>
+            <a href="https://travela.pladsen.dev"
+              >Web:
+              <span class="hover-secondary">www.travela.pladsen.dev</span></a
+            >
+          </p>
+        </div>
+        <div class="copyright-container"><p>&#169; Magnus Pladsen 2023</p></div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+/* ---- FOOTER ---- */
+
+footer {
+  padding: 50px 40px;
+  padding-bottom: 70px !important;
+  background-color: var(--grayGreen-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+footer .logo-container {
+  margin-bottom: 25px;
+}
+
+.footer-content {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.footer-text,
+.copyright-container p {
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
+.footer-text p {
+  margin: 10px 0;
+}
+
+.footer-text span {
+  margin-right: 5px;
+}
+
+.copyright-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  opacity: 0.3;
+  white-space: nowrap;
+  font-weight: 100;
+}
+
+/* -- DESKTOP -- */
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 50px 50px 40px;
+  }
+  .footer-text p {
+    margin: 10 px 0;
+  }
+}

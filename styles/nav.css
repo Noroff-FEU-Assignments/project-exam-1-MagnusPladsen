@@ -1,0 +1,101 @@
+/* ---- NAV ---- */
+
+nav {
+  background-color: var(--grayGreen-color);
+  height: auto;
+  padding: 10px 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-content-container {
+  max-width: 70rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.desktop-menu {
+  display: none;
+}
+
+.mobile-dropdown {
+  position: absolute;
+  position: fixed;
+  top: 106.5px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: var(--grayGreen-color
+  );
+  z-index: 20;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding-top: 15vh;
+  padding-left: 0;
+  list-style: none;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.menu-list li {
+  width: fit-content;
+  margin: 0 auto;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-list li:hover {
+  cursor: pointer;
+  color: var(--secondary-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-active {
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 5px;
+}
+
+/* -- TABLET -- */
+@media screen and (min-width: 768px and max-width: 999px) {
+  .menu-list li {
+    font-size: 30px;
+  }
+}
+
+/* -- MOBILE AND TABLET -- */
+@media screen and (max-width: 999px) {
+  nav {
+    position: fixed;
+    z-index: 50;
+    width: calc(100vw - 80px);
+  }
+  header {
+    position: relative;
+    top: 100px:
+  }
+}
+
+/* -- DESKTOP -- */
+@media screen and (min-width: 1000px) {
+  .desktop-menu {
+    display: block;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .menu-list {
+    flex-direction: row;
+    gap: 40px;
+    padding: 0;
+    font-size: 1em;
+  }
+}
