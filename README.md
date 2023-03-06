@@ -1,6 +1,6 @@
 # Project Exam 1
 
-![image](https://https://pikwy.com/web/640631423574f87a7727829e)
+![image](https://api.pikwy.com/web/640632e309edcb4dba628a19.jpg)
 
 This is for a Exam on my School.
 
