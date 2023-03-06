@@ -1,4 +1,4 @@
-# Project Exam 1
+# Project Exam 1 - Travela
 
 ![image](https://api.pikwy.com/web/640632e309edcb4dba628a19.jpg)
 
@@ -11,8 +11,6 @@ This is a fake blog that gets posts from a headless WP API.
 We were only allowed to use HTML, CSS and vanilla JS.
 
 ## Built With
-
-You can list a the tech stack that you've used over here
 
 - HTML
 - CSS
